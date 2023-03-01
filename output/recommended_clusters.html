@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_62503bc80c2f332fb667d450c56b9467 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_62503bc80c2f332fb667d450c56b9467" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_62503bc80c2f332fb667d450c56b9467 = L.map(
+                "map_62503bc80c2f332fb667d450c56b9467",
+                {
+                    center: [37.7775, -122.416389],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[-90, -180], [90, 180]],
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e82affed54e133d6b06a7b5d89eef128 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 12, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_62503bc80c2f332fb667d450c56b9467);
+        
+    
+        function geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "purple", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87 = L.geoJson(null, {
+                onEachFeature: geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87_onEachFeature,
+            
+                style: geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87_styler,
+        });
+
+        function geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87_add (data) {
+            geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87
+                .addData(data)
+                .addTo(map_62503bc80c2f332fb667d450c56b9467);
+        }
+            geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87_add({"bbox": [-122.41933465000002, 37.7844939, -122.4161155, 37.7871752], "features": [{"bbox": [-122.41933465000002, 37.7844939, -122.4161155, 37.7871752], "geometry": {"coordinates": [[[-122.4166314, 37.7844939], [-122.41933465000002, 37.78546150000001], [-122.4181867, 37.7871752], [-122.4161155, 37.7853121], [-122.4166314, 37.7844939]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_70fc7a98b0244bc8fa71f1c2e852fce9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da4b7a54797b2fea8b7dd814825ce1ad = $(`<div id="html_da4b7a54797b2fea8b7dd814825ce1ad" style="width: 100.0%; height: 100.0%;">Cluster # 47: Geary Street ________ top tags:   restaurant, fast food, cafe, thai, bar</div>`)[0];
+                popup_70fc7a98b0244bc8fa71f1c2e852fce9.setContent(html_da4b7a54797b2fea8b7dd814825ce1ad);
+            
+        
+
+        geo_json_e43d8fbdd1c796fd5e40cf4f2c039b87.bindPopup(popup_70fc7a98b0244bc8fa71f1c2e852fce9)
+        ;
+
+        
+    
+    
+        function geo_json_3d97893ed5166305782982803ef35204_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "purple", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_3d97893ed5166305782982803ef35204_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3d97893ed5166305782982803ef35204 = L.geoJson(null, {
+                onEachFeature: geo_json_3d97893ed5166305782982803ef35204_onEachFeature,
+            
+                style: geo_json_3d97893ed5166305782982803ef35204_styler,
+        });
+
+        function geo_json_3d97893ed5166305782982803ef35204_add (data) {
+            geo_json_3d97893ed5166305782982803ef35204
+                .addData(data)
+                .addTo(map_62503bc80c2f332fb667d450c56b9467);
+        }
+            geo_json_3d97893ed5166305782982803ef35204_add({"bbox": [-122.443761, 37.7986206, -122.4388599, 37.800321], "features": [{"bbox": [-122.443761, 37.7986206, -122.4388599, 37.800321], "geometry": {"coordinates": [[[-122.443761, 37.7986206], [-122.441971, 37.800321], [-122.4388599, 37.7996575], [-122.4423912, 37.7988645], [-122.443761, 37.7986206]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_720808b5e132b341feef948d84edf2b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4d2dfeae7de3eb40ad9c3abd890d474 = $(`<div id="html_e4d2dfeae7de3eb40ad9c3abd890d474" style="width: 100.0%; height: 100.0%;">Cluster # 90: Chestnut Street ________ top tags:   restaurant, outdoor seating, bank, cafe, wheelchair</div>`)[0];
+                popup_720808b5e132b341feef948d84edf2b1.setContent(html_e4d2dfeae7de3eb40ad9c3abd890d474);
+            
+        
+
+        geo_json_3d97893ed5166305782982803ef35204.bindPopup(popup_720808b5e132b341feef948d84edf2b1)
+        ;
+
+        
+    
+    
+        function geo_json_05de74ead4f872c87b19a0658b676b4f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "purple", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_05de74ead4f872c87b19a0658b676b4f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_05de74ead4f872c87b19a0658b676b4f = L.geoJson(null, {
+                onEachFeature: geo_json_05de74ead4f872c87b19a0658b676b4f_onEachFeature,
+            
+                style: geo_json_05de74ead4f872c87b19a0658b676b4f_styler,
+        });
+
+        function geo_json_05de74ead4f872c87b19a0658b676b4f_add (data) {
+            geo_json_05de74ead4f872c87b19a0658b676b4f
+                .addData(data)
+                .addTo(map_62503bc80c2f332fb667d450c56b9467);
+        }
+            geo_json_05de74ead4f872c87b19a0658b676b4f_add({"bbox": [-122.4123717, 37.7992129, -122.40938448148773, 37.802557388327365], "features": [{"bbox": [-122.4123717, 37.7992129, -122.40938448148773, 37.802557388327365], "geometry": {"coordinates": [[[-122.4104685, 37.7992129], [-122.4123717, 37.8001671], [-122.4122253, 37.8018669], [-122.40938448148773, 37.802557388327365], [-122.4104685, 37.7992129]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_11befa4c067df561e9ffdb01850ef2e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cbad2e5a7dee363058b6a59f177e341 = $(`<div id="html_4cbad2e5a7dee363058b6a59f177e341" style="width: 100.0%; height: 100.0%;">Cluster # 147: Columbus Avenue ________ top tags:   restaurant, italian, wheelchair, outdoor seating, cafe</div>`)[0];
+                popup_11befa4c067df561e9ffdb01850ef2e5.setContent(html_4cbad2e5a7dee363058b6a59f177e341);
+            
+        
+
+        geo_json_05de74ead4f872c87b19a0658b676b4f.bindPopup(popup_11befa4c067df561e9ffdb01850ef2e5)
+        ;
+
+        
+    
+    
+        function geo_json_d6bcc76f48cf90ca9c564c17f25dc2be_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "purple", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_d6bcc76f48cf90ca9c564c17f25dc2be_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d6bcc76f48cf90ca9c564c17f25dc2be = L.geoJson(null, {
+                onEachFeature: geo_json_d6bcc76f48cf90ca9c564c17f25dc2be_onEachFeature,
+            
+                style: geo_json_d6bcc76f48cf90ca9c564c17f25dc2be_styler,
+        });
+
+        function geo_json_d6bcc76f48cf90ca9c564c17f25dc2be_add (data) {
+            geo_json_d6bcc76f48cf90ca9c564c17f25dc2be
+                .addData(data)
+                .addTo(map_62503bc80c2f332fb667d450c56b9467);
+        }
+            geo_json_d6bcc76f48cf90ca9c564c17f25dc2be_add({"bbox": [-122.4125298, 37.8076959, -122.4097816, 37.8093332], "features": [{"bbox": [-122.4125298, 37.8076959, -122.4097816, 37.8093332], "geometry": {"coordinates": [[[-122.4105165, 37.8076959], [-122.4125298, 37.8078029], [-122.4124985, 37.8093332], [-122.4097816, 37.8092436], [-122.4105165, 37.8076959]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_1ef28da0dc92cb32618d37f54134bd86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e41a9d0df2187a1a38da16eb5bf1fd5c = $(`<div id="html_e41a9d0df2187a1a38da16eb5bf1fd5c" style="width: 100.0%; height: 100.0%;">Cluster # 256: Pier 39 ________ top tags:   telephone, restaurant, fast food, ice cream, ferry terminal</div>`)[0];
+                popup_1ef28da0dc92cb32618d37f54134bd86.setContent(html_e41a9d0df2187a1a38da16eb5bf1fd5c);
+            
+        
+
+        geo_json_d6bcc76f48cf90ca9c564c17f25dc2be.bindPopup(popup_1ef28da0dc92cb32618d37f54134bd86)
+        ;
+
+        
+    
+    
+        function geo_json_4a024461566b4785e51c0add575a497f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "purple", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_4a024461566b4785e51c0add575a497f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4a024461566b4785e51c0add575a497f = L.geoJson(null, {
+                onEachFeature: geo_json_4a024461566b4785e51c0add575a497f_onEachFeature,
+            
+                style: geo_json_4a024461566b4785e51c0add575a497f_styler,
+        });
+
+        function geo_json_4a024461566b4785e51c0add575a497f_add (data) {
+            geo_json_4a024461566b4785e51c0add575a497f
+                .addData(data)
+                .addTo(map_62503bc80c2f332fb667d450c56b9467);
+        }
+            geo_json_4a024461566b4785e51c0add575a497f_add({"bbox": [-122.4023318, 37.7860568, -122.3993014, 37.7882446], "features": [{"bbox": [-122.4023318, 37.7860568, -122.3993014, 37.7882446], "geometry": {"coordinates": [[[-122.4013648, 37.7860568], [-122.4023318, 37.7866814], [-122.4003041, 37.7882446], [-122.3993014, 37.7866405], [-122.4013648, 37.7860568]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9af4400893190c74645c151faa81c3f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09c5de73408c4632517b2ca51b5c7aa8 = $(`<div id="html_09c5de73408c4632517b2ca51b5c7aa8" style="width: 100.0%; height: 100.0%;">Cluster # 63: Mission Street ________ top tags:   restaurant, wheelchair, cafe, bar, outdoor seating</div>`)[0];
+                popup_9af4400893190c74645c151faa81c3f5.setContent(html_09c5de73408c4632517b2ca51b5c7aa8);
+            
+        
+
+        geo_json_4a024461566b4785e51c0add575a497f.bindPopup(popup_9af4400893190c74645c151faa81c3f5)
+        ;
+
+        
+    
+</script>
+</html>
