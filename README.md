@@ -27,8 +27,8 @@ Libraries for Geo Data:
 ---
 ## Data: OpenStreetMaps
 All objects with tag "Amenity" for the City of San Francisco. Data was queried using OSMnx library. 
-<div style="width:50px; height:50px"></div>
-<img src='./materials/OSM.png' alt='test' width='50%' height='50% title = 'test'>
+<div style="width:100px; height:100px"></div>
+<img src='./materials/OSM.png' alt='test' width='100%' height='100% title = 'test'>
 
 ---
 ## Feature Engineering
@@ -36,8 +36,8 @@ Some amenities were represented as ways aka polygons, so I had to convert them i
 I filtered amenities to the ones I considered as most relevant, removing everything related to transit, parks and "non-vibrant" feature like ATM. 
 Tags/features also were selected in a way so only the most important ones participated in similarities calculation. 
 The final dataset consists of 5247 observations and 295 features where column = tag and its presence is coded as 1.
-<div style="width:50px; height:50px"></div>
-<img src='./output/amenities_after_filtering.png' alt='test' width='50%' height='50% title = 'test2'>
+<div style="width:100px; height:100px"></div>
+<img src='./output/amenities_after_filtering.png' alt='test' width='100%' height='100% title = 'test2'>
 
 ---
 ## Clustering
@@ -48,15 +48,15 @@ Based on the project scope cluster had to match following guidelines, some of th
 - Cluster density isn't important
 
 I tried four clustering algorithms, and each of them added some value to the process. First, I utilized DBSCAN to remove outliers - points that weren't merged into any of clusters because of being more than 500 meters apart from at least any two other points. After that I attempted another unsupervised clustering algorithm - MeanShift which produced too large clusters. Knowing the approximate number of clusters to produce, I tried running KMeans to reduce the clusters' size while searching over several values of clusters' numbers. The problem with K-Means was that it produced clusters with less than 3 points, otherwise clusters with at least 3 points were too large. After that I've tried Constrained K-Means clustering technique which made it to the production model.
-<div style="width:30px; height:30px"></div>
-<img src='./output/DBSACAN_outliers.png' alt='test' width='30%' height='30% title = 'test3'>
-<img src='./output/K-Means-constrained.png' alt='test' width='30%' height='30% title = 'test4'>
+<div style="width:100px; height:100px"></div>
+<img src='./output/DBSACAN_outliers.png' alt='test' width='100%' height='100% title = 'test3'>
+<img src='./output/K-Means-constrained.png' alt='test' width='100%' height='100% title = 'test4'>
 
 ---
 ## Data aggregation and Recommender System
 All tags were summed up together per cluster which became the basis for the Recommender System which was built based on the Cosine Similarity
-<div style="width:50px; height:50px"></div>
-<img src='./output/clusters_from_points.png' alt='test' width='50%' height='50% title = 'test5'>
+<div style="width:100px; height:100px"></div>
+<img src='./output/clusters_from_points.png' alt='test' width='100%' height='100% title = 'test5'>
 
 ----
 ## Potential Improvements
